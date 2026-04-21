@@ -20,9 +20,7 @@ class Solution:
                 return root.left
             if root.right:
                 return root.right
-            else:
-                return None
-
+            return None
         if key < root.val:
             root.left = self.deleteNode(root.left, key)
         if key > root.val:
